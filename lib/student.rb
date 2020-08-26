@@ -60,7 +60,6 @@ class Student
   end 
   
 
-    
   def self.first_X_students_in_grade_10(x)
     sql = <<-SQL
     SELECT * FROM students 
@@ -71,6 +70,8 @@ class Student
     self.new_from_db(row)
     end 
   end 
+  
+  def 
   
   def save
     sql = <<-SQL
@@ -89,7 +90,6 @@ class Student
       grade TEXT
     )
     SQL
-
     DB[:conn].execute(sql)
   end
 
